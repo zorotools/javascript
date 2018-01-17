@@ -18,10 +18,13 @@ module.exports = {
     //
     // // disallow assignment in conditional expressions
     // 'no-cond-assign': ['error', 'always'],
-    //
-    // // disallow use of console
-    // 'no-console': 'warn',
-    //
+
+    // disallow use of console
+    "no-console": [
+      "error",
+      { allow: ["warn", "error"]}
+    ],
+
     // // disallow use of constant expressions in conditions
     // 'no-constant-condition': 'warn',
     //
@@ -84,7 +87,7 @@ module.exports = {
     // // disallow use of Object.prototypes builtins directly
     // // https://eslint.org/docs/rules/no-prototype-builtins
     // 'no-prototype-builtins': 'error',
-    // 
+    //
     // // disallow multiple spaces in a regular expression literal
     // 'no-regex-spaces': 'error',
     //
