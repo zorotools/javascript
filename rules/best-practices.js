@@ -8,10 +8,10 @@ module.exports = {
     'array-callback-return': ['error', { allowImplicit: true }],
 
     // // treat var statements as if they were block scoped
-    // 'block-scoped-var': 'error',
+    'block-scoped-var': 'error',
     //
     // // specify the maximum cyclomatic complexity allowed in a program
-    // complexity: ['off', 11],
+    'complexity': ['off', 10],
     //
     // // enforce that class methods use "this"
     // // https://eslint.org/docs/rules/class-methods-use-this
@@ -23,7 +23,7 @@ module.exports = {
     // 'consistent-return': 'error',
     //
     // // specify curly brace conventions for all control statements
-    // curly: ['error', 'multi-line'],
+    'curly': ['error', 'multi-line'],
     //
     // // require default case in switch statements
     // 'default-case': ['error', { commentPattern: '^no default$' }],
@@ -33,7 +33,7 @@ module.exports = {
 
     // // enforces consistent newlines before or after dots
     // // https://eslint.org/docs/rules/dot-location
-    // 'dot-location': ['error', 'property'],
+    'dot-location': ['error', 'property'],
 
     // require the use of === and !==
     // https://eslint.org/docs/rules/eqeqeq
@@ -43,10 +43,10 @@ module.exports = {
     // 'guard-for-in': 'error',
     //
     // // disallow the use of alert, confirm, and prompt
-    // 'no-alert': 'warn',
+    'no-alert': 'error',
     //
     // // disallow use of arguments.caller or arguments.callee
-    // 'no-caller': 'error',
+    'no-caller': 'error',
 
     // disallow lexical declarations in case/default clauses
     // https://eslint.org/docs/rules/no-case-declarations.html
@@ -54,7 +54,7 @@ module.exports = {
 
     // // disallow division operators explicitly at beginning of regular expression
     // // https://eslint.org/docs/rules/no-div-regex
-    // 'no-div-regex': 'off',
+    'no-div-regex': 'off',
 
     // disallow else after a return in an if
     // https://eslint.org/docs/rules/no-else-return
@@ -72,7 +72,7 @@ module.exports = {
     //
     // // disallow empty destructuring patterns
     // // https://eslint.org/docs/rules/no-empty-pattern
-    // 'no-empty-pattern': 'error',
+    'no-empty-pattern': 'error',
     //
     // // disallow comparisons to null without a type-checking operator
     // 'no-eq-null': 'off',
@@ -81,10 +81,10 @@ module.exports = {
     'no-eval': 'error',
 
     // // disallow adding to native types
-    // 'no-extend-native': 'error',
+    'no-extend-native': 'error',
     //
     // // disallow unnecessary function binding
-    // 'no-extra-bind': 'error',
+    'no-extra-bind': 'error',
     //
     // // disallow Unnecessary Labels
     // // https://eslint.org/docs/rules/no-extra-label
@@ -94,29 +94,29 @@ module.exports = {
     // 'no-fallthrough': 'error',
     //
     // // disallow the use of leading or trailing decimal points in numeric literals
-    // 'no-floating-decimal': 'error',
+    'no-floating-decimal': 'error',
     //
     // // disallow reassignments of native objects or read-only globals
     // // https://eslint.org/docs/rules/no-global-assign
-    // 'no-global-assign': ['error', { exceptions: [] }],
+    'no-global-assign': ['error', { 'exceptions': [] }],
     // // deprecated in favor of no-global-assign
     // 'no-native-reassign': 'off',
     //
     // // disallow implicit type conversions
     // // https://eslint.org/docs/rules/no-implicit-coercion
-    // 'no-implicit-coercion': ['off', {
-    //   boolean: false,
-    //   number: true,
-    //   string: true,
-    //   allow: [],
-    // }],
+     'no-implicit-coercion': ['off', {
+       boolean: false,
+       number: true,
+       string: true,
+       allow: [],
+     }],
     //
     // // disallow var and named functions in global scope
     // // https://eslint.org/docs/rules/no-implicit-globals
-    // 'no-implicit-globals': 'off',
+    'no-implicit-globals': 'off',
     //
     // // disallow use of eval()-like methods
-    // 'no-implied-eval': 'error',
+    'no-implied-eval': 'error',
     //
     // // disallow this keywords outside of classes or class-like objects
     // 'no-invalid-this': 'off',
@@ -128,13 +128,14 @@ module.exports = {
     // 'no-labels': ['error', { allowLoop: false, allowSwitch: false }],
     //
     // // disallow unnecessary nested blocks
-    // 'no-lone-blocks': 'error',
+    'no-lone-blocks': 'error',
 
     // disallow creation of functions within loops
     'no-loop-func': 'error',
 
     // // disallow magic numbers
     // // https://eslint.org/docs/rules/no-magic-numbers
+    // @TODO enable, we agree but we have magic numbers
     // 'no-magic-numbers': ['off', {
     //   ignore: [],
     //   ignoreArrayIndexes: true,
@@ -142,10 +143,10 @@ module.exports = {
     //   detectObjects: false,
     // }],
     //
-    // // disallow use of multiple spaces
-    // 'no-multi-spaces': ['error', {
-    //   ignoreEOLComments: false,
-    // }],
+     // disallow use of multiple spaces
+     'no-multi-spaces': ['error', {
+       ignoreEOLComments: false,
+     }],
     //
     // // disallow use of multiline strings
     // 'no-multi-str': 'error',
@@ -160,11 +161,11 @@ module.exports = {
     'no-new-wrappers': 'error',
 
     // // disallow use of (old style) octal literals
-    // 'no-octal': 'error',
+    'no-octal': 'error',
     //
     // // disallow use of octal escape sequences in string literals, such as
     // // var foo = 'Copyright \251';
-    // 'no-octal-escape': 'error',
+    'no-octal-escape': 'error',
 
     // disallow reassignment of function parameters
     // disallow parameter object manipulation except for specific exclusions
@@ -185,10 +186,10 @@ module.exports = {
     }],
 
     // // disallow usage of __proto__ property
-    // 'no-proto': 'error',
+    'no-proto': 'error',
     //
     // // disallow declaring the same variable more then once
-    // 'no-redeclare': 'error',
+    'no-redeclare': 'error',
 
     // disallow certain object properties
     // https://eslint.org/docs/rules/no-restricted-properties
@@ -256,7 +257,7 @@ module.exports = {
     //
     // // disallow unmodified conditions of loops
     // // https://eslint.org/docs/rules/no-unmodified-loop-condition
-    // 'no-unmodified-loop-condition': 'off',
+    'no-unmodified-loop-condition': 'off',
     //
     // // disallow usage of expressions in statement position
     // 'no-unused-expressions': ['error', {
@@ -270,7 +271,7 @@ module.exports = {
     // 'no-unused-labels': 'error',
     //
     // // disallow unnecessary .call() and .apply()
-    // 'no-useless-call': 'off',
+    'no-useless-call': 'off',
     //
     // // disallow useless string concatenation
     // // https://eslint.org/docs/rules/no-useless-concat

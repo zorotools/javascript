@@ -60,7 +60,7 @@ module.exports = {
 
     // // disallow symbol constructor
     // // https://eslint.org/docs/rules/no-new-symbol
-    // 'no-new-symbol': 'error',
+    'no-new-symbol': 'error',
     //
     // // disallow specific imports
     // // https://eslint.org/docs/rules/no-restricted-imports
@@ -71,11 +71,11 @@ module.exports = {
     //
     // // disallow to use this/super before super() calling in constructors.
     // // https://eslint.org/docs/rules/no-this-before-super
-    // 'no-this-before-super': 'error',
+    'no-this-before-super': 'error',
     //
     // // disallow useless computed property keys
     // // https://eslint.org/docs/rules/no-useless-computed-key
-    // 'no-useless-computed-key': 'error',
+    'no-useless-computed-key': 'error',
 
     // disallow unnecessary constructor
     // https://eslint.org/docs/rules/no-useless-constructor
@@ -128,7 +128,7 @@ module.exports = {
 
     // // disallow parseInt() in favor of binary, octal, and hexadecimal literals
     // // https://eslint.org/docs/rules/prefer-numeric-literals
-    // 'prefer-numeric-literals': 'error',
+    'prefer-numeric-literals': 'error',
     //
     // // suggest using Reflect methods where applicable
     // // https://eslint.org/docs/rules/prefer-reflect
@@ -136,7 +136,7 @@ module.exports = {
     //
     // // use rest parameters instead of arguments
     // // https://eslint.org/docs/rules/prefer-rest-params
-    // 'prefer-rest-params': 'error',
+    'prefer-rest-params': 'error',
 
     // suggest using the spread operator instead of .apply()
     // https://eslint.org/docs/rules/prefer-spread
@@ -148,7 +148,7 @@ module.exports = {
 
     // // disallow generator functions that do not have yield
     // // https://eslint.org/docs/rules/require-yield
-    // 'require-yield': 'error',
+    'require-yield': 'error',
     //
     // // enforce spacing between object rest-spread
     // // https://eslint.org/docs/rules/rest-spread-spacing
