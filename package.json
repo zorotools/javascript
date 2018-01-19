@@ -1,12 +1,8 @@
 {
-  "name": "airbnb-style",
+  "name": "eslint-config-zoro-style",
   "version": "2.0.0",
   "description": "A mostly reasonable approach to JavaScript.",
   "scripts": {
-    "preinstall": "npm run install:config && npm run install:config:base",
-    "install:config": "cd packages/eslint-config-airbnb && npm prune && npm install",
-    "install:config:base": "cd packages/eslint-config-airbnb-base && npm prune && npm install",
-    "lint": "markdownlint --config linters/.markdownlint.json README.md */README.md",
     "pretest": "npm run --silent lint",
     "test": "npm run --silent test:config && npm run --silent test:config:base",
     "test:config": "cd packages/eslint-config-airbnb; npm test",
@@ -18,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/airbnb/javascript.git"
+    "url": "https://github.com/zorotools/javascript.git"
   },
   "keywords": [
     "style guide",
@@ -32,10 +28,29 @@
   "author": "Harrison Shoff <hi@hshoff.com> (https://twitter.com/hshoff)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/airbnb/javascript/issues"
+    "url": "https://github.com/zorotools/javascript/issues"
   },
-  "homepage": "https://github.com/airbnb/javascript",
+  "homepage": "https://github.com/zorotools/javascript",
   "devDependencies": {
-    "markdownlint-cli": "^0.3.1"
+    "babel-preset-airbnb": "^2.4.0",
+    "babel-tape-runner": "^2.0.1",
+    "editorconfig-tools": "^0.1.1",
+    "eslint": "^4.15.0",
+    "eslint-find-rules": "^3.1.1",
+    "eslint-plugin-import": "^2.8.0",
+    "in-publish": "^2.0.0",
+    "markdownlint-cli": "^0.3.1",
+    "safe-publish-latest": "^1.1.1",
+    "tape": "^4.8.0"
+  },
+  "peerDependencies": {
+    "eslint": "^4.15.0",
+    "eslint-plugin-import": "^2.8.0"
+  },
+  "engines": {
+    "node": ">= 4"
+  },
+  "dependencies": {
+    "eslint-restricted-globals": "^0.1.1"
   }
 }
